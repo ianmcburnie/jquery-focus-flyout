@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Demo: jquery-focus-flyout</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <style>
+            .flyout {
+                position: relative;
+            }
+            .flyout__trigger[aria-expanded=true] ~ .flyout__live-region > .flyout__overlay {
+                display: block;
+            }
+            .flyout__overlay {
+                background-color: LightYellow;
+                border: 1px solid #eee;
+                display: none;
+                left: 0;
+                padding: 1rem;
+                position: absolute;
+                width: 300px;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div role="main">
+            <h1>Demo: jquery-focus-flyout</h1>
+            <p>Set focus on an input to trigger flyout.</p>
+            <div>
+                <span class="flyout">
+                    <a href="http://www.ebay.com" class="flyout__trigger">Link</a>
+                    <span class="flyout__live-region" aria-live="off">
+                        <div class="flyout__overlay">
+                            <p>Any kind of HTML control can go inside of a flyout...</p>
+                            <p>A link: <a href="http://www.ebay.com">www.ebay.com</a></p>
+                            <p>A button: <button>Click Me</button></p>
+                            <p>An input: <input type="text" aria-label="Dummy textbox"></p>
+                            <p>A checkbox: <input type="checkbox" aria-label="Dummy checkbox"></p>
+                        </div>
+                    </span>
+                </span>
+                <span class="flyout">
+                    <button class="flyout__trigger">Button</button>
+                    <span class="flyout__live-region" aria-live="off">
+                        <div class="flyout__overlay">
+                            <p>Any kind of HTML control can go inside of a flyout...</p>
+                            <p>A link: <a href="http://www.ebay.com">www.ebay.com</a></p>
+                            <p>A button: <button>Click Me</button></p>
+                            <p>An input: <input type="text" aria-label="Dummy textbox"></p>
+                            <p>A checkbox: <input type="checkbox" aria-label="Dummy checkbox"></p>
+                        </div>
+                    </span>
+                </span>
+                <span class="flyout">
+                    <input class="flyout__trigger" type="text" placeholder="input" />
+                    <span class="flyout__live-region" aria-live="off">
+                        <div class="flyout__overlay">
+                            <p>Any kind of HTML control can go inside of a flyout...</p>
+                            <p>A link: <a href="http://www.ebay.com">www.ebay.com</a></p>
+                            <p>A button: <button>Click Me</button></p>
+                            <p>An input: <input type="text" aria-label="Dummy textbox"></p>
+                            <p>A checkbox: <input type="checkbox" aria-label="Dummy checkbox"></p>
+                        </div>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <script src="browser.js"></script>
+        <script>
+            $(function() {
+                $('.flyout').focusFlyout({debug: true}).on('flyoutOpen flyoutClose', function(e) {
+                    console.log(e.type, this);
+                });
+            });
+        </script>
+    </body>
+</html>

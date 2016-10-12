@@ -1,0 +1,8 @@
+{
+    "dependencies":[
+        {"require-run": "jquery"},
+        "jquery-next-id",
+        "jquery-focus-exit",
+        "jquery.focusflyout.js"
+    ]
+}

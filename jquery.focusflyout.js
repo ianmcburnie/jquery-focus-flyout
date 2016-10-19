@@ -1,6 +1,6 @@
 /**
 * @file jQuery plugin that creates the basic interactivity for a flyout that opens on focus of trigger element
-* @version 0.0.2
+* @version 0.0.3
 * @author Ian McBurnie <ianmcburnie@hotmail.com>
 * @requires jquery-next-id
 * @requires jquery-focus-exit
@@ -10,6 +10,8 @@
     * jQuery plugin that creates the basic interactivity for a flyout that opens on focus of trigger element
     *
     * @method "jQuery.fn.focusFlyout"
+    * @param {boolean} [options.autoExpand] - expand overlay on focus (default: true)
+    * @param {boolean} [options.debug] - print debug output to console (default: false)
     * @param {boolean} [options.triggerSelector] - selector for trigger element (default: '.flyout__trigger')
     * @param {boolean} [options.overlaySelector] - selector for overlay element (default: '.flyout__overlay')
     * @fires {object} flyoutExpand - the flyout has expanded
@@ -33,7 +35,6 @@
             var expandFlyout = function() {
                 if ($trigger.attr('aria-expanded') === 'false') {
                     $trigger.attr('aria-expanded', 'true');
-                    $overlay.attr('aria-hidden', 'false');
                     $widget.trigger('flyoutExpand');
                 }
             };
@@ -42,7 +43,6 @@
             var collapseFlyout = function() {
                 if ($trigger.attr('aria-expanded') === 'true') {
                     $trigger.attr('aria-expanded', 'false');
-                    $overlay.attr('aria-hidden', 'true');
                     $widget.trigger('flyoutCollapse');
                 }
             };
@@ -54,9 +54,6 @@
             if ($overlay.prop('id') === '') {
                 $overlay.prop('id', $widget.prop('id') + '-overlay');
             }
-
-            // initial state is hidden from assistive technology
-            $overlay.attr('aria-hidden', 'true');
 
             // the input controls the overlay's expanded state
             $trigger

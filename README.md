@@ -70,6 +70,12 @@ Markup after plugin:
 }
 ```
 
+## Params
+
+* `options.overlaySelector` - selector for overlay element (default: '.flyout__overlay')
+* `options.triggerSelector` - selector for trigger element (default: '.flyout__trigger')
+* `options.expandedClass` - if present, uses this class instead of aria-expanded (default: null)
+
 ## Events
 
 * `flyoutExpand` - the flyout has expanded

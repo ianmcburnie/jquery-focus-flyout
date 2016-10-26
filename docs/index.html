@@ -8,7 +8,8 @@
             .flyout {
                 position: relative;
             }
-            .flyout__trigger[aria-expanded=true] ~ .flyout__live-region > .flyout__overlay {
+            .flyout__trigger[aria-expanded=true] ~ .flyout__live-region > .flyout__overlay,
+            .flyout--expanded .flyout__overlay {
                 display: block;
             }
             .flyout__overlay {

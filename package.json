@@ -19,10 +19,6 @@
   },
   "pre-commit": "prepublish",
   "author": "Ian McBurnie <ianmcburnie@hotmail.com>",
-  "homepage": "https://github.com/ianmcburnie/jquery-focus-flyout",
-  "bugs": {
-    "url": "https://github.com/ianmcburnie/jquery-focus-flyout/issues"
-  },
   "keywords": [
     "jquery-plugin",
     "ecosystem:jquery",
@@ -32,19 +28,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ianmcburnie/jquery-focus-flyout.git"
+    "url": "https://github.com/makeup-jquery/jquery-focus-flyout.git"
   },
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2",
-    "coveralls": "^2",
-    "eslint": "^3",
-    "eslint-config-google": "~0.7",
+    "coveralls": "^3",
+    "eslint": "^4",
+    "eslint-config-ebay": "~0.1",
     "jasmine-core": "^2",
     "jquery": ">=1.11",
-    "jquery-next-id": "~0.1",
-    "jquery-focus-exit": "~0.3",
-    "jquery-migrate": "^3",
+    "jquery-focus-exit": "^1",
+    "jquery-next-id": "^1",
     "jsdoc": "^3",
     "jsmin": "^1",
     "karma": "^1",
@@ -55,15 +50,15 @@
     "karma-phantomjs-launcher": "^1",
     "lasso-cli": "^2",
     "onchange": "^3",
-    "parallelshell": "^2",
+    "parallelshell": "^3",
     "phantomjs-prebuilt": "^2",
     "pre-commit": "^1",
     "rimraf": "^2"
   },
   "peerDependencies": {
     "jquery": ">=1.11",
-    "jquery-next-id": "~0.1",
-    "jquery-focus-exit": "~0.3"
+    "jquery-focus-exit": "^1",
+    "jquery-next-id": "^1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

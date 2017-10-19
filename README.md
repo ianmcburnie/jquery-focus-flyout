@@ -1,10 +1,10 @@
 # jquery-focus-flyout
 
 <p>
-    <a href="https://travis-ci.org/ianmcburnie/jquery-focus-flyout"><img src="https://api.travis-ci.org/ianmcburnie/jquery-focus-flyout.svg?branch=master" alt="Build Status" /></a>
-    <a href='https://coveralls.io/github/ianmcburnie/jquery-focus-flyout?branch=master'><img src='https://coveralls.io/repos/ianmcburnie/jquery-focus-flyout/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
-    <a href="https://david-dm.org/ianmcburnie/jquery-focus-flyout"><img src="https://david-dm.org/ianmcburnie/jquery-focus-flyout.svg" alt="Dependency status" /></a>
-    <a href="https://david-dm.org/ianmcburnie/jquery-focus-flyout#info=devDependencies"><img src="https://david-dm.org/ianmcburnie/jquery-focus-flyout/dev-status.svg" alt="devDependency status" /></a>
+    <a href="https://travis-ci.org/makeup-jquery/jquery-focus-flyout"><img src="https://api.travis-ci.org/makeup-jquery/jquery-focus-flyout.svg?branch=master" alt="Build Status" /></a>
+    <a href='https://coveralls.io/github/makeup-jquery/jquery-focus-flyout?branch=master'><img src='https://coveralls.io/repos/makeup-jquery/jquery-focus-flyout/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
+    <a href="https://david-dm.org/makeup-jquery/jquery-focus-flyout"><img src="https://david-dm.org/makeup-jquery/jquery-focus-flyout.svg" alt="Dependency status" /></a>
+    <a href="https://david-dm.org/makeup-jquery/jquery-focus-flyout#info=devDependencies"><img src="https://david-dm.org/makeup-jquery/jquery-focus-flyout/dev-status.svg" alt="devDependency status" /></a>
 </p>
 
 jQuery plugin that creates the basic interactivity for a flyout that opens on focus of trigger element
@@ -102,8 +102,8 @@ Each test run will generate the following reports:
 
 ## CI Build
 
-https://travis-ci.org/ianmcburnie/jquery-focus-flyout
+https://travis-ci.org/makeup-jquery/jquery-focus-flyout
 
 ## Code Coverage
 
-https://coveralls.io/github/ianmcburnie/jquery-focus-flyout?branch=master
+https://coveralls.io/github/makeup-jquery/jquery-focus-flyout?branch=master
